@@ -77,8 +77,12 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
                 0px 4px 6px rgba(0, 0, 0, 0.05),
                 inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms ease-in-out,
-                box-shadow 250ms ease-in-out;
+    transition: background-color 350ms ease-in-out,
+                box-shadow 350ms ease-in-out;
+}
+
+.program .row:last-child .col-12:last-child .program-card {
+    margin-bottom: 0;
 }
 
 .program-card:hover {
@@ -91,14 +95,27 @@
     color: #FFFFFF;
 }
 
-.program-card:last-child {
-    margin-bottom: 0;
-}
-
-.program-card img {
+.program-card strong::before {
+    content: ''; /* content 속성에서는 이미지 사이즈 조정 불가 */
+    display: block;
     width: auto;
     height: 195px;
-    margin: 0 auto 16px auto;
+    margin-bottom: 16px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.program .row:last-child .col-12:first-child strong::before {
+    background-image: url('../assets/img-fulltime-campus.png');
+}
+
+.program .row:last-child .col-12:nth-child(2) strong::before {
+    background-image: url('../assets/img-fulltime-remote.png');
+}
+
+.program .row:last-child .col-12:last-child strong::before {
+    background-image: url('../assets/img-parttime-flex.png');
 }
 
 .program-card strong {
@@ -106,7 +123,7 @@
     line-height: 1.333333333333333;
     letter-spacing: -0.02em;
     color: #2B292D;
-    transition: color 250ms ease-in-out;
+    transition: color 350ms ease-in-out;
 }
 
 /* Responsive */
@@ -159,7 +176,11 @@
         margin-bottom: 32px;
     }
 
-    .program-card img {
+    .program-card {
+        margin-bottom: 0;
+    }
+
+    .program-card strong::before {
         margin-bottom: 24px;
     }
 }
