@@ -1,0 +1,61 @@
+/* Landing */
+.landing {
+    text-align: center;
+    background-color: #FDDED8;
+}
+
+.landing-contents {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-title {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #2B292D;
+}
+
+.landing-desc {
+    margin-bottom: 24px;
+    line-height: 1.375;
+}
+
+.landing-contents .button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-contents .button-wrapper a:first-child {
+    margin-right: 8px;
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+    /* Landing */
+    .landing-contents {
+        height: auto; /* landing-content 내부 요소의 height 총합이 되도록 설정 */
+        padding: 120px 0;
+    }
+
+    .landing-title {
+        margin-bottom: 32px;
+        font-size: 70px;
+        line-height: 1.028571428571429;
+    }
+
+    .landing-desc {
+        margin-bottom: 32px;
+        line-height: 1.454545454545455;
+    }
+
+    .landing-contents .button-wrapper a:first-child {
+        margin-right: 16px;
+    }
+}
