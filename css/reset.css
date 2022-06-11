@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+button,
+input,
+textarea {
+    font-family: 'DM Sans', sans-serif;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+    outline: none;
+    box-shadow: none;
+}
+
+a {
+    font-size: 16px;
+    color: #2B292D;
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #2B292D;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    list-style: none;
+}
+
+.fill-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 48px;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    background-color: #3040C4;
+    transition: opacity 250ms ease-in-out,
+                font-size 250ms ease-in-out;
+}
+
+.fill-button:hover {
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+.fill-button.inverted {
+    color: #3040C4;
+    background-color: #FFFFFF;
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 22px;
+        line-height: 1.454545454545455;
+    }
+
+    .fill-button {
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.555555555555556;
+    }
+
+    .fill-button:hover {
+        font-size: 19px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
