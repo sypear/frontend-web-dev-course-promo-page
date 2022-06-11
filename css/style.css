@@ -36,6 +36,24 @@
     margin-right: 8px;
 }
 
+/* Summary */
+.summary {
+    padding: 80px 0;
+    background-color: #F4F5F7;
+}
+
+.summary .row .col-md-6:first-child {
+    margin-bottom: 40px;
+}
+
+.summary-title {
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 1.363636363636364;
+    letter-spacing: -0.04em;
+    color: #2B292D;
+}
+
 /* Responsive */
 @media screen and (min-width: 768px) {
     /* Landing */
@@ -57,5 +75,15 @@
 
     .landing-contents .button-wrapper a:first-child {
         margin-right: 16px;
+    }
+
+    /* Summary */
+    .summary-title {
+        font-size: 26px;
+        line-height: 1.307692307692308;
+    }
+
+    .summary .row .col-md-6:first-child {
+        margin-bottom: 0;
     }
 }
