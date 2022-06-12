@@ -24,9 +24,11 @@ textarea:active {
 }
 
 a {
-    font-size: 16px;
-    color: #2B292D;
     text-decoration: none;
+}
+
+button {
+    border: none;
 }
 
 button:hover {
