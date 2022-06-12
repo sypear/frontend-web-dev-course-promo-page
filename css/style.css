@@ -55,10 +55,6 @@
 }
 
 /* Program */
-.program .row:first-child {
-    margin-bottom: 32px;
-}
-
 .program .category {
     margin-bottom: 8px;
     color: #009B4D;
@@ -106,6 +102,10 @@
     background-repeat: no-repeat;
 }
 
+.program .row:first-child {
+    margin-bottom: 32px;
+}
+
 .program .row:last-child .col-12:first-child strong::before {
     background-image: url('../assets/img-fulltime-campus.png');
 }
@@ -124,6 +124,33 @@
     letter-spacing: -0.02em;
     color: #2B292D;
     transition: color 350ms ease-in-out;
+}
+
+/* Curriculum */
+.curriculum .category {
+    margin-bottom: 8px;
+    color: #0189D1;
+}
+
+.curriculum .detailed-page-title {
+    margin-bottom: 24px;
+}
+
+.curriculum-desc {
+    margin-bottom: 32px;
+}
+
+.curriculum .row:first-child {
+    margin-bottom: 48px;
+}
+
+.curriculum-detail-desc {
+    font-size: 15px;
+    line-height: 1.466666666666667;
+}
+
+.curriculum .row:last-child .col-12:first-child {
+    margin-bottom: 40px;
 }
 
 /* Responsive */
@@ -182,5 +209,42 @@
 
     .program-card strong::before {
         margin-bottom: 24px;
+    }
+
+    /* Curriculum */
+    .curriculum .category {
+        margin-bottom: 16px;
+    }
+    
+    .curriculum .detailed-page-title {
+        margin-bottom: 32px;
+    }
+    
+    .curriculum-desc {
+        margin-bottom: 72px;
+    }
+
+    .curriculum .row:first-child {
+        margin-bottom: 36px;
+    }
+
+    .curriculum-image {
+        content: '';
+        display: block;
+        width: auto;
+        height: 426px;
+        background-image: url('../assets/img-curriculum.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .curriculum-detail-desc {
+        font-size: 18px;
+        line-height: 1.444444444444444;
+    }
+
+    .curriculum .row:last-child .col-12:first-child {
+        margin-bottom: 0;
     }
 }
